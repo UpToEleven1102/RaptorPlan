@@ -12,7 +12,7 @@ class ContentController extends Controller
     }
 
     function dashboard(){
-        return view('app\dashboard');
+        return view('app.dashboard');
     }
 
     function test(){

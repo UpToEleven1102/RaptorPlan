@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware('auth')->group(function(){
+    Route::get('/dashboard', 'ContentController@dashboard')->name('raptorplan');
+});
+
 Route::get('/testconnection','ContentController@test')->name('test_connection');
 
 Route::get('/', 'ContentController@home')->name('home');
@@ -24,7 +28,7 @@ Route::get('/', 'ContentController@home')->name('home');
 
 Auth::routes();
 
-Route::get('/dashboard', 'ContentController@dashboard')->name('raptorplan');
+
 
 Auth::routes();
 
