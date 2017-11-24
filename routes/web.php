@@ -28,4 +28,5 @@ Route::get('/dashboard', 'ContentController@dashboard')->name('raptorplan');
 
 Auth::routes();
 
+Route::get('/register','Controller@RegisterUser')->name('register');
 // Route::get('/home', 'HomeController@index')->name('home');
