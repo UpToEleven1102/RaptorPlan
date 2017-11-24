@@ -51,14 +51,14 @@ TODO: add nav bar with logo and login function
                                     </span>
             @endif
 
-            <select name="major" id="select_major">
+            <!-- <select name="major" id="select_major">
                 <option selected hidden>Major ...</option>
                 @foreach($majors as $major)
                 <option value="{{$major}}">
                     {{$major}}
                 </option>
                 @endforeach
-            </select>
+            </select> -->
 
             <input class="button" type="submit" style="background-color:rgb(10,10,10)">
         </form>
