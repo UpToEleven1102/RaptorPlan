@@ -11,7 +11,7 @@
 |
 */
 Route::middleware('auth')->group(function(){
-    Route::get('/dashboard', 'ContentController@dashboard')->name('raptorplan');
+    Route::get('/raptorplan', 'ContentController@raptorplan')->name('raptorplan');
 });
 
 Route::get('/testconnection','ContentController@test')->name('test_connection');
@@ -33,4 +33,5 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/register','Controller@RegisterUser')->name('register');
+Route::get('/majors','ContentController@getMajors')->name('majors');
 // Route::get('/home', 'HomeController@index')->name('home');

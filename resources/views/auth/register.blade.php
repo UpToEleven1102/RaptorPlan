@@ -51,7 +51,7 @@
             @endif
 
             <select name="major" id="select_major">
-                <option selected hidden>Major ...</option>
+                <option selected hidden>Preferred major ...</option>
                 @foreach($majors as $major)
                 <option value="{{$major}}">
                     {{$major}}

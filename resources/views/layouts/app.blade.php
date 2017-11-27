@@ -74,13 +74,11 @@
                                 </ul>
                             </li>
                         @endguest -->
-            
-
         @yield('content')
     </div>
-    <div class="grid-x" style="position: absolute; bottom: 0; width: 100%;">
-        <div class="cell " style="opacity: 0.8; background-color: rgb(0,7,100); height: 2em; color:beige;">
-            <p class="float-right" style="padding-right: 2em;">&#0169 RaptorPlan Team</p>
+    <div class="grid-x" style="position: absolute; bottom: 0; width:100%">
+        <div class="cell">
+            <p class="float-right" style="padding-right: 2em; color:white">&#0169 RaptorPlan Team 2017</p>
         </div>
     </div>
     <!-- Scripts -->
