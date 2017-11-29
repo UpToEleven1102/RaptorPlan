@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Major as Major;
 use DB;
+use File;
 
 class ContentController extends Controller
 {
@@ -17,7 +18,7 @@ class ContentController extends Controller
     }
 
     function raptorplan(){
-        return view('./dashboard/index');
+        return File::get(public_path().'/dashboard/index.html');
     }
 
     function getMajors(Major $majors){
