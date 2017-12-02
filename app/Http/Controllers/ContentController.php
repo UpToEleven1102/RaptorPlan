@@ -18,7 +18,7 @@ class ContentController extends Controller
     }
 
     function raptorplan(){
-        return File::get(public_path().'/dashboard/index.html');
+        return File::get(public_path().'/index.html');
     }
 
     function getMajors(Major $majors){
