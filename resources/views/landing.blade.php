@@ -68,7 +68,6 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="https://raptorplan-188518.appspot.com/"> The project has been migrated to new address</a>
                     @auth
                         <a href="{{ route('home') }}">Home</a>
                         <a href="{{ route('logout')}}" onclick = "event.preventDefault();
