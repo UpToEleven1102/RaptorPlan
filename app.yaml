@@ -1,0 +1,28 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_LOG: errorlog
+  APP_KEY: base64:iKzU0+fcTPSROJeiKk1v5wI1JVD73rNamiDithIeVng=
+  STORAGE_DIR: /tmp
+  # CACHE_DRIVER: database
+  # SESSION_DRIVER: database
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_HOST: sql3.freesqldatabase.com
+  DB_DATABASE: sql3210081
+  DB_USERNAME: sql3210081
+  DB_PASSWORD: 8YSaRPx5zg
+#   DB_SOCKET: "/cloudsql/raptorplan-188518:us-central1:raptorplanaw"
+
+# beta_settings:
+#     # for Cloud SQL, set this value to the Cloud SQL connection name,
+#     # e.g. "project:region:cloudsql-instance"p
+#     cloud_sql_instances: "raptorplan-188518:us-central1:raptorplanaw"
